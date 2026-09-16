@@ -1,6 +1,5 @@
 from pandas.plotting import scatter_matrix
 from ucimlrepo import fetch_ucirepo
-from scipy.stats import normaltest
 from itertools import combinations
 
 import matplotlib.pyplot as plt
@@ -8,8 +7,7 @@ import seaborn as sns
 import pandas as pd
 import numpy as np
 import warnings
-import pickle
-import time
+
 
 
 def main():
