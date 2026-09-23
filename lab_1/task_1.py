@@ -17,10 +17,10 @@ def main():
     X = room_occupancy_estimation.data.features
     y = room_occupancy_estimation.data.targets
 
-    #print(room_occupancy_estimation.metadata)
-    #print(room_occupancy_estimation.variables)
+    print(room_occupancy_estimation.metadata)
+    print(room_occupancy_estimation.variables)
     target = list(y.columns)[0]
-    #print(target)
+    print(target)
 
     df = pd.concat([X, y], axis=1)
     print(df)
