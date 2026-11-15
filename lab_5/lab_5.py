@@ -534,7 +534,7 @@ def boston_house_prices():
     plt.show()
 
 def main():
-   # iris()
+   iris()
    boston_house_prices()
 
 if __name__ == "__main__":
