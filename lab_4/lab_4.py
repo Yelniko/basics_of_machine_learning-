@@ -544,7 +544,7 @@ def main():
     print(df.head())
 
     basAnalitks(df)
-    '''
+
     X = df.drop(columns=["Class"])
     y = df["Class"]
 
@@ -589,7 +589,6 @@ def main():
     results_df = pd.DataFrame(results)
 
     print(results_df.round(4))
-'''
 
 
 
