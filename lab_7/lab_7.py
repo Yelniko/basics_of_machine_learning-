@@ -334,7 +334,7 @@ def main():
     df = pd.read_csv(csv_files[0])
     print(df.head())
 
-    # descriptive_analysis(df, target="target_class", exclude=["Id"])
+    descriptive_analysis(df, target="target_class", exclude=["Id"])
 
     data = df.copy()
 

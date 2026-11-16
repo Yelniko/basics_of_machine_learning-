@@ -165,7 +165,7 @@ def iris():
 
     for name, model in models.items():
 
-        print(f"\n-----------{name}-----------")
+        print(f"\n{name}")
 
         spaces = search_spaces[name]
 
@@ -179,7 +179,7 @@ def iris():
                 n_jobs=-1
             ),
 
-            "RandomizedSearchCV": RandomizedSearchCV(
+    "RandomizedSearchCV": RandomizedSearchCV(
                 estimator=model,
                 param_distributions=spaces["random"],
                 n_iter=20,
@@ -216,7 +216,7 @@ def iris():
         ascending=False
     )
 
-    print("\n-----------RESULTS-----------")
+    print("\nRESULTS")
 
     print(
         comparison.to_string(
